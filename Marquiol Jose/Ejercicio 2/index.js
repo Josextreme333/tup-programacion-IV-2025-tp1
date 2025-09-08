@@ -45,4 +45,4 @@ app.get('/alumnos/:nombre', (req, res) => {
     res.json({ ...alumno, promedio, estado });
 });
 
-app.listen(3000, () => console.log('Servidor funcionando en puerto 5000'));
+app.listen(5000, () => console.log('Servidor funcionando en puerto 5000'));

@@ -3,12 +3,12 @@ POST http://localhost:5000/alumnos
 Content-Type: application/json
 
 {
-  "nombre": "Juan",
-  "notas": [5, 7, 6]
+  "nombre": "Pedro",
+  "notas": [6, 7, 5]
 }
 
 ### Modificar alumno
-PUT http://localhost:5000/alumnos/Juan
+PUT http://localhost:5000/alumnos/Jose
 Content-Type: application/json
 
 {
@@ -16,4 +16,4 @@ Content-Type: application/json
 }
 
 ### Consultar alumno
-GET http://localhost:5000/alumnos/Juan
+GET http://localhost:5000/alumnos/Jose
