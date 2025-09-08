@@ -24,21 +24,5 @@ app.get('/rectangulos', (req, res) => {
     res.json(result);
 });
 
-//borrar calculo
-app.delete("/rectangulos/:index", (req, res) => {
-  const index = parseInt(req.params.index);
-
-  if (isNaN(index) || index < 0 || index >= calculos.length) {
-    return res.status(404).json({
-      success: false,
-      message: "calculo no encontrado",
-    });
-  }
-
-  const eliminado = calculos[index];
-  calculos.splice(index, 1);
-
-  res.json({ success: true, data: eliminado });
-});
 
 app.listen(5000, () => console.log('Servidor escuchando en puerto 5000'));

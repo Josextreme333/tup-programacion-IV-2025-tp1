@@ -1,0 +1,25 @@
+@url=http://localhost:5000
+
+### Crear cálculo (para rectangulo)
+POST {{url}}/rectangulos
+Content-Type: application/json
+
+{
+  "base": 9,
+  "altura": 5
+}
+
+### Crear cálculo (para cuadrado)
+POST {{url}}/rectangulos
+Content-Type: application/json
+
+{
+  "base": 4,
+  "altura": 4
+}
+
+### Consultar todos los calculos
+GET {{url}}/rectangulos
+
+
+
