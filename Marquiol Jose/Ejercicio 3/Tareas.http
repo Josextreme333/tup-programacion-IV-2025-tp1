@@ -1,0 +1,26 @@
+### Crear tarea
+POST http://localhost:5000/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Hacer ejercicio",
+  "completada": false
+}
+
+### Crear otra tarea
+POST http://localhost:5000/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Estudiar",
+  "completada": true
+}
+
+### Listar todas
+GET http://localhost:5000/tareas
+
+### Listar completadas
+GET http://localhost:5000/tareas?completada=true
+
+### Listar incompletas
+GET http://localhost:5000/tareas?completada=false
