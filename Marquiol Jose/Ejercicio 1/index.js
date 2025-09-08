@@ -24,5 +24,4 @@ app.get('/rectangulos', (req, res) => {
     res.json(result);
 });
 
-
-app.listen(5000, () => console.log('Servidor escuchando en puerto 5000'));
+app.listen(5000, () => console.log('Servidor funcionando en puerto 5000'));

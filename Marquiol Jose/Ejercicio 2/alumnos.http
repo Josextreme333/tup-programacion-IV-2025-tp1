@@ -1,0 +1,19 @@
+### Agregar alumno
+POST http://localhost:5000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Juan",
+  "notas": [5, 7, 6]
+}
+
+### Modificar alumno
+PUT http://localhost:5000/alumnos/Juan
+Content-Type: application/json
+
+{
+  "notas": [8, 9, 7]
+}
+
+### Consultar alumno
+GET http://localhost:5000/alumnos/Juan
